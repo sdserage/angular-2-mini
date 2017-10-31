@@ -7,8 +7,8 @@ angular.module('myApp', ['ui.router']).config(function($stateProvider, $urlRoute
     })
     .state(
       'products', {
-        url: '/products',
-        templateUrl: 'js/home/homeTmpl.html',
+        url: '/products/:id',
+        templateUrl: 'js/products/productsTmpl.html',
         controller: 'productsCtrl'
     })
     .state(
